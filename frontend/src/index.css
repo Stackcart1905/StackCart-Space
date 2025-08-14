@@ -1,31 +1,68 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #1E293B;
+  background-color: #F8FAFC;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --radius: 0.625rem;
+  
+  /* Professional Navy Blue, Emerald Green, Clean Gray Color Scheme */
+  --background: #F8FAFC;
+  --foreground: #1E293B;
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  --popover: #FFFFFF;
+  --popover-foreground: #1E293B;
+  --primary: #1E3A8A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #10B981;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #E2E8F0;
+  --accent-foreground: #1E293B;
+  --destructive: #DC2626;
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #1E3A8A;
+  --chart-1: #1E3A8A;
+  --chart-2: #10B981;
+  --chart-3: #64748B;
+  --chart-4: #3B82F6;
+  --chart-5: #059669;
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #1E293B;
+  --sidebar-primary: #1E3A8A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E2E8F0;
+  --sidebar-accent-foreground: #1E293B;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #1E3A8A;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1E3A8A;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #10B981;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -42,12 +79,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1E3A8A;
+  color: #FFFFFF;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #10B981;
+  background-color: #10B981;
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +95,104 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #1E293B;
+    background-color: #F8FAFC;
   }
   a:hover {
-    color: #747bff;
+    color: #10B981;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
   }
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+.dark {
+  --background: #1E293B;
+  --foreground: #F8FAFC;
+  --card: #334155;
+  --card-foreground: #F8FAFC;
+  --popover: #334155;
+  --popover-foreground: #F8FAFC;
+  --primary: #10B981;
+  --primary-foreground: #FFFFFF;
+  --secondary: #475569;
+  --secondary-foreground: #F8FAFC;
+  --muted: #475569;
+  --muted-foreground: #94A3B8;
+  --accent: #475569;
+  --accent-foreground: #F8FAFC;
+  --destructive: #EF4444;
+  --border: #475569;
+  --input: #475569;
+  --ring: #10B981;
+  --chart-1: #10B981;
+  --chart-2: #1E3A8A;
+  --chart-3: #94A3B8;
+  --chart-4: #3B82F6;
+  --chart-5: #059669;
+  --sidebar: #334155;
+  --sidebar-foreground: #F8FAFC;
+  --sidebar-primary: #10B981;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #475569;
+  --sidebar-accent-foreground: #F8FAFC;
+  --sidebar-border: #475569;
+  --sidebar-ring: #10B981;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utilities used in components */
+.bg-grid-slate-200 {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='m0 .5 32 0M.5 0v32'/%3e%3c/svg%3e");
+}
+
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
 }
