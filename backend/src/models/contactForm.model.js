@@ -20,7 +20,7 @@ const contactFormSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  message: {
+  projectDetails : {
     type: String,
     required: true,
   },
