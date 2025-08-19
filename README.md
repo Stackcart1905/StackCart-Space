@@ -85,7 +85,7 @@ Right: Illustration (Laptop → Shopping Cart → Growth Arrow)
 
 ## 📌 Tech Stack (if you’re coding it)  
 
-○ Frontend: React / Next.js, Tailwind CSS  
+○ Frontend: React / vite, Tailwind CSS  
 ○ Backend: Node.js, Express  
 ○ Database: MongoDB  
 ○ Integrations: , Google Maps Email
@@ -96,5 +96,5 @@ Right: Illustration (Laptop → Shopping Cart → Growth Arrow)
 
 *Clone this repo*  
 ```bash
-git clone https://github.com/your-username/code-to-cart.git
+git clone https://github.com/your-username/stackCart-space.git
 cd stackCart- space
