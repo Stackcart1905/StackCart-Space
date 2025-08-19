@@ -1,8 +1,10 @@
 import dotenv from 'dotenv' ;
    dotenv.config()  ; 
+
    
 import express from 'express' ; 
 import cors from 'cors' ;
+import cookieParser from 'cookie-parser' ;
 import { connectDB } from './lib/db.js';
 import authRoutes from "./routes/authRoute.js"
 import blogRoutes from './routes/blogRoute.js';
@@ -13,15 +15,16 @@ import serviceRoute from './routes/serviceRoute.js';
 
 
 
-
-
 const app  = express () ; 
 const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// cors origin allow from everyehere
+app.use(cookieParser());
+
+// cors origin allow from everywhere
 app.use(cors());
 
 
