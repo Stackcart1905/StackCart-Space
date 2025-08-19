@@ -7,6 +7,15 @@ const blogSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  coverImage : {
+    type : String , 
+    required : true  , 
+  } ,
+  // store public id from cloudinary of image it will help to delete image from cloudinary 
+  publicId : {
+    type : String , 
+    required : true , 
+  }  , 
   content: {
     type: String,
     required: true,

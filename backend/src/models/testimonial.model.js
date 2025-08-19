@@ -12,7 +12,11 @@ const testimonialSchema = new mongoose.Schema({
   },
   clientPhoto: {
     type: String, // URL to the client's photo
-    required: false, // Optional
+    required: false,
+  },
+  clientPhotoPublicId: { //  this field only help in delte image from cloudinaru 
+    type: String,
+    required: false, // Optional, since the photo is also false
   },
   company: {
     type: String,
