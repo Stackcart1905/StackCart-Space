@@ -8,7 +8,7 @@ From building your store (Code) to bringing customers (Cart), we handle everythi
 👉 Code – We develop modern, responsive, SEO-friendly websites & apps for your business.
 👉 Cart – We manage marketing, product listing, and promotions to ensure real sales growth.
 
-🌟 Features
+🌟 Features 
 🏠 Home Page
 
 Hero section with powerful headline & CTA
