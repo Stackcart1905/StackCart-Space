@@ -58,7 +58,6 @@ From building your store (*Code) to bringing customers (Cart*), we handle everyt
 ## 📞 Contact  
 
 ○ Contact form (Name, Email, Phone, Business Type, Message)  
-○ WhatsApp click-to-chat  
 ○ Social media links  
 ○ Office address with Google Maps  
 
@@ -89,7 +88,7 @@ Right: Illustration (Laptop → Shopping Cart → Growth Arrow)
 ○ Frontend: React / Next.js, Tailwind CSS  
 ○ Backend: Node.js, Express  
 ○ Database: MongoDB  
-○ Integrations: WhatsApp API, Google Maps Embed  
+○ Integrations: , Google Maps Email
 
 ---
 
@@ -98,4 +97,4 @@ Right: Illustration (Laptop → Shopping Cart → Growth Arrow)
 *Clone this repo*  
 ```bash
 git clone https://github.com/your-username/code-to-cart.git
-cd code-to-cart
+cd stackCart- space
