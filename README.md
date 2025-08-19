@@ -1,115 +1,101 @@
-**🚀 Code to Cart – Your Complete Online Selling Solution**
+# 🚀 Code to Cart 
+*Your Complete Online Selling Solution*
 
-Code to Cart helps businesses go online and grow sales effortlessly.
-From building your store (Code) to bringing customers (Cart), we handle everything end-to-end.
+Code to Cart helps businesses go online and grow sales effortlessly.  
+From building your store (*Code) to bringing customers (Cart*), we handle everything end-to-end.
 
-**✨ Our USP**
+## ✨ Our USP  
 
-👉 Code – We develop modern, responsive, SEO-friendly websites & apps for your business.
-👉 Cart – We manage marketing, product listing, and promotions to ensure real sales growth.
+*👉 Code* – We develop modern, responsive, SEO-friendly websites & apps for your business.  
+*👉 Cart* – We manage marketing, product listing, and promotions to ensure real sales growth.  
 
-***🌟 Features*** 
-**🏠 Home Page**
+---
 
-**Hero section with powerful headline & CTA**
+## 🌟 Features  
+### 🏠 Home Page  
 
--USP highlights: Website Development, Product Listing, Marketing, Analytics
+*Hero section with powerful headline & CTA*  
 
--Visual step-by-step process: Idea → Platform → Marketing → Sales
+○ USP highlights: Website Development, Product Listing, Marketing, Analytics  
+○ Visual step-by-step process: Idea → Platform → Marketing → Sales  
+○ Why Choose Us: End-to-End Service, Fast Delivery, Affordable Plans  
 
-Why Choose Us: End-to-End Service, Fast Delivery, Affordable Plans
+---
 
-**📖 About Us**
+## 📖 About Us  
 
--Company story
+○ Company story  
+○ Mission & Vision  
+○ Team/Founders info with photos  
 
--Mission & Vision
+---
 
--Team/Founders info with photos
+## 🛠 Services  
 
-**🛠 Services**
+○ Website & App Development  
+○ Product Listing & Catalog Setup  
+○ Digital Marketing Campaigns  
+○ Branding & Graphics  
+○ Customer Support Solutions  
 
--Website & App Development
+---
 
--Product Listing & Catalog Setup
+## 📂 Portfolio / Case Studies  
 
--Digital Marketing Campaigns
+○ Showcase of projects (real or mockup)  
+○ Before/After, screenshots, success stories  
 
--Branding & Graphics
+---
 
--Customer Support Solutions
+## 💰 Pricing Plans  
 
-**📂 Portfolio / Case Studies**
+○ Starter Plan – Basic site + product listing  
+○ Growth Plan – Site + marketing  
+○ Premium Plan – Everything + analytics & support  
 
--Showcase of projects (real or mockup)
+---
 
--Before/After, screenshots, success stories
+## 📞 Contact  
 
-**💰 Pricing Plans**
+○ Contact form (Name, Email, Phone, Business Type, Message)  
+○ WhatsApp click-to-chat  
+○ Social media links  
+○ Office address with Google Maps  
 
--Starter Plan – Basic site + product listing
+---
 
--Growth Plan – Site + marketing
+## 🔗 Footer (Across All Pages)  
 
--Premium Plan – Everything + analytics & support
+○ Quick links: Home | Services | About | Pricing | Contact  
+○ Social media icons  
+○ Privacy Policy, Terms & Conditions  
+○ Copyright  
 
-**📞 Contact**
+---
 
--Contact form (Name, Email, Phone, Business Type, Message)
+## 🖼 Wireframe Layout  
 
--WhatsApp click-to-chat
+○ *Navigation Bar (Sticky):*  
+Logo + Brand Name on left | Menu items (Home, About, Services, Portfolio, Pricing, Blog, Contact) + CTA button (“Get Started”) on right  
 
--Social media links
+○ *Landing Section:*  
+Left: Headline, Subtext, CTA buttons (Get Started, Book Demo)  
+Right: Illustration (Laptop → Shopping Cart → Growth Arrow)  
 
--Office address with Google Maps
+---
 
-**🔗 Footer (Across All Pages)**
+## 📌 Tech Stack (if you’re coding it)  
 
--Quick links: Home | Services | About | Pricing | Contact
+○ Frontend: React / Next.js, Tailwind CSS  
+○ Backend: Node.js, Express  
+○ Database: MongoDB  
+○ Integrations: WhatsApp API, Google Maps Embed  
 
--Social media icons
+---
 
--Privacy Policy, Terms & Conditions
+## 🚀 Getting Started  
 
--Copyright
-
-**🖼 Wireframe Layout**
-
--Navigation Bar (Sticky):
-Logo + Brand Name on left | Menu items (Home, About, Services, Portfolio, Pricing, Blog, Contact) + CTA button (“Get Started”) on right
-
--Landing Section:
-
-Left: Headline, Subtext, CTA buttons (Get Started, Book Demo)
-
-Right: Illustration (Laptop → Shopping Cart → Growth Arrow)
-
-
-**📌 Tech Stack (if you’re coding it)**
-
-Frontend: React / Next.js, Tailwind CSS
-
-Backend: Node.js, Express
-
-Database: MongoDB
-
-Integrations: WhatsApp API, Google Maps Embed
-
-**🚀 Getting Started**
-
-Clone this repo
-
+*Clone this repo*  
+```bash
 git clone https://github.com/your-username/code-to-cart.git
 cd code-to-cart
-
-
-Install dependencies
-
-npm install
-
-
-Run locally
-
-npm run dev
-
-🔥 From Code to Cart – We don’t just build websites, we build online businesses.
