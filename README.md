@@ -102,13 +102,16 @@ The backend powers all business logic and APIs for **authentication, content man
 4. **Growth & Support:** Ongoing analytics, optimization, and customer support.  
 
 ## 📸 Project Screenshots  
+**🏠 Home Page**
 
 <img width="1898" height="935" alt="Image" src="https://github.com/user-attachments/assets/0791f23f-5d63-48ca-b2da-dab6b286328d" />
 
+**🛠 Services page**
 
 <img width="1903" height="898" alt="Image" src="https://github.com/user-attachments/assets/4e60f492-c3b4-4451-be51-11f43387da3f" />
 
 
+**📞 Contact**
 
 <img width="1893" height="923" alt="Image" src="https://github.com/user-attachments/assets/2708f4f3-b142-4c80-aa9a-09a410e32e43" />
 
