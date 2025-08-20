@@ -25,8 +25,8 @@ const submitContactForm = async (req, res) => {
 
         //  Define the email content with dynamic data
         const mailOptions = {
-            from: `"StackCart_Space Contact Form" <${process.env.APP_EMAIL}>`, 
-            to: ["ramanandimo457@gmail.com"], // The admin's email address
+            from: `"StackCart_Space Contact Form" <${process.env.APP_EMAIL}>`,
+            to: [process.env.RECIPIENT_EMAIL1], // The admin's email address
             subject: `New Contact Form Submission from ${name}`,
             html: `
                 <p>Hello,</p>

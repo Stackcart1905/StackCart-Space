@@ -12,7 +12,7 @@ const serviceSchema = new mongoose.Schema({
     trim: true,
   },
   icon: {
-    type: String, // Store service icon in url or class name 
+    type: String, // Store service icon in url or class name  // use icon library instead of image directly 
     required: true,
   },
 });

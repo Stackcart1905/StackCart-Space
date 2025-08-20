@@ -5,6 +5,7 @@ import USPHighlights from './USPHighlights'
 import WhyChooseUs from './WhyChooseUs'
 import Footer from '../footer/Footer'
 import HowItWorks from './HowItWorks'
+import Testimonials from './Testimonials'
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <USPHighlights />
         <HowItWorks />
         <WhyChooseUs />
+        <Testimonials />
       </main>
       
       

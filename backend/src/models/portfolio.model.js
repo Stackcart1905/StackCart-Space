@@ -1,4 +1,4 @@
-import mongoose from 'mongoose' ; 
+import mongoose from 'mongoose'; 
 
 const portfolioSchema = new mongoose.Schema({
   projectName: {
@@ -15,18 +15,19 @@ const portfolioSchema = new mongoose.Schema({
     type: String, // URL to the hosted 'before' image
     required: true,
   },
+  beforeImagePublicId: { // Add this field for cloudinary deletion image
+    type: String,
+    required: true,
+  },
   afterImage: {
     type: String, // URL to the hosted 'after' image
     required: true,
   },
-
-//   tags: {
-//   type: [String],   
-//   required: false, 
-//   default: []       
-// }
-
-  tags: [String], // An array of strings for filtering
+  afterImagePublicId: { // Add this field for cloudinary deletion image
+    type: String,
+    required: true,
+  },
+  tags: [String],
 });
 
 const Portfolio = mongoose.model('Portfolio', portfolioSchema);
