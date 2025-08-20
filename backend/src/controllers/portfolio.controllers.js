@@ -2,6 +2,7 @@ import Portfolio from "../models/portfolio.model.js";
 import { cloudinaryUpload, deleteFromCloudinary } from "../lib/cloudinary.js";
 
 // get All portfolio
+
 const getAllPortfolios = async (req, res) => {
     try {
         const portfolios = await Portfolio.find();
@@ -13,6 +14,7 @@ const getAllPortfolios = async (req, res) => {
 
 // create portfoios
 const createPortfolio = async (req, res) => {
+
     try {
         const { projectName, description, tags } = req.body;
 
@@ -20,7 +22,7 @@ const createPortfolio = async (req, res) => {
         if (!req.files || !req.files.beforeImage || !req.files.afterImage) {
             return res.status(400).json({ success: false, error: 'Both before and after images are required.' });
         }
-
+        
         // Upload both images to Cloudinary
         const uploadedBeforeImage = await cloudinaryUpload(req.files.beforeImage[0]); // 0 index contain buffer data
         const uploadedAfterImage = await cloudinaryUpload(req.files.afterImage[0]);

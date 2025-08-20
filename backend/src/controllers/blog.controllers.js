@@ -36,14 +36,14 @@ const createBlogPost = async (req, res) => {
     if (!title || !content || !author) {
       return res.status(400).json({ success: false, error: 'Title, content, and author are required.' });
     }
-
+   
     // Handle the image upload. The image file is in req.file, not req.body.
     if (!req.file) {
       return res.status(400).json({ success: false, error: 'A cover image is required.' });
     }
 
     //  Upload the image to Cloudinary
-    const uploadedImage = await cloudinaryUpload(req.file.buffer); // Assuming memoryStorage()
+    const uploadedImage = await cloudinaryUpload(req.file); // Assuming memoryStorage()
     // If you used diskStorage(), the argument would be req.file.path
 
     if (!uploadedImage || !uploadedImage.secure_url || !uploadedImage.public_id) {
@@ -93,7 +93,7 @@ const updateBlogPost = async (req, res) => {
       }
 
       //  Upload the new image to Cloudinary
-      const uploadedImage = await cloudinaryUpload(req.file.buffer); 
+      const uploadedImage = await cloudinaryUpload(req.file); 
       if (!uploadedImage || !uploadedImage.secure_url || !uploadedImage.public_id) {
         return res.status(500).json({ success: false, error: 'New image upload failed' });
       }
