@@ -34,7 +34,7 @@ const createTestimonial = async (req, res) => {
 
     let uploadedPhoto = null;
     if (req.file) { // Check if a photo was provided
-      uploadedPhoto = await cloudinaryUpload(req.file.buffer);
+      uploadedPhoto = await cloudinaryUpload(req.file);
       if (!uploadedPhoto) {
         return res.status(500).json({ success: false, error: 'Image upload failed.' });
       }
@@ -70,7 +70,7 @@ const updateTestimonial = async (req, res) => {
       if (existingTestimonial.clientPhotoPublicId) {
         await deleteFromCloudinary(existingTestimonial.clientPhotoPublicId);
       }
-      const uploadedPhoto = await cloudinaryUpload(req.file.buffer);
+      const uploadedPhoto = await cloudinaryUpload(req.file);
       if (!uploadedPhoto) {
         return res.status(500).json({ success: false, error: 'New photo upload failed.' });
       }

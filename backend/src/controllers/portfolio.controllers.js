@@ -22,7 +22,7 @@ const createPortfolio = async (req, res) => {
         }
 
         // Upload both images to Cloudinary
-        const uploadedBeforeImage = await cloudinaryUpload(req.files.beforeImage[0]); // 0 index contain buffer data
+        const uploadedBeforeImage = await cloudinaryUpload(req.files.beforeImage[0]); // 0 index contain 
         const uploadedAfterImage = await cloudinaryUpload(req.files.afterImage[0]);
 
         if (!uploadedBeforeImage || !uploadedAfterImage) {

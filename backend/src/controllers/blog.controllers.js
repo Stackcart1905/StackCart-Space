@@ -43,7 +43,7 @@ const createBlogPost = async (req, res) => {
     }
 
     //  Upload the image to Cloudinary
-    const uploadedImage = await cloudinaryUpload(req.file.buffer); // Assuming memoryStorage()
+    const uploadedImage = await cloudinaryUpload(req.file); // Assuming memoryStorage()
     // If you used diskStorage(), the argument would be req.file.path
 
     if (!uploadedImage || !uploadedImage.secure_url || !uploadedImage.public_id) {
@@ -93,7 +93,7 @@ const updateBlogPost = async (req, res) => {
       }
 
       //  Upload the new image to Cloudinary
-      const uploadedImage = await cloudinaryUpload(req.file.buffer); 
+      const uploadedImage = await cloudinaryUpload(req.file); 
       if (!uploadedImage || !uploadedImage.secure_url || !uploadedImage.public_id) {
         return res.status(500).json({ success: false, error: 'New image upload failed' });
       }
