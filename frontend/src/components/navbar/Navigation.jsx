@@ -121,9 +121,9 @@ function Navigation() {
         </a>
         
         {/* CTA Button */}
-        <Button className="bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+        {/* <Button className="bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
           Get Started
-        </Button>
+        </Button> */}
       </div>
 
       {/* Mobile menu button */}

@@ -14,14 +14,61 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Send
+  Send,
+  CheckCircle,
+  XCircle,
+  Loader2
 } from "lucide-react";
+import { useState } from "react";
 
 function Contact() {
-  const handleSubmit = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState({
+    show: false,
+    type: '', // 'success' or 'error'
+    message: ''
+  });
+
+  const showNotification = (type, message) => {
+    setNotification({
+      show: true,
+      type,
+      message
+    });
+    
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      setNotification(prev => ({ ...prev, show: false }));
+    }, 5000);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted');
+    setIsSubmitting(true);
+    
+    try {
+      // Get form data
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Simulate success/error randomly for demo
+      const success = Math.random() > 0.2; // 80% success rate for demo
+      
+      if (success) {
+        showNotification('success', 'Message sent successfully! We\'ll get back to you within 24 hours.');
+        e.target.reset(); // Clear the form
+      } else {
+        showNotification('error', 'Failed to send message. Please try again or contact us directly.');
+      }
+      
+    } catch (error) {
+      showNotification('error', 'An unexpected error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsApp = () => {
@@ -33,6 +80,38 @@ function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Navigation />
+
+      {/* Notification Toast */}
+      {notification.show && (
+        <div className={`fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg border-l-4 min-w-80 transform transition-all duration-300 ${
+          notification.type === 'success' 
+            ? 'bg-green-50 border-green-400 text-green-800' 
+            : 'bg-red-50 border-red-400 text-red-800'
+        }`}>
+          <div className="flex items-start">
+            <div className="flex-shrink-0">
+              {notification.type === 'success' ? (
+                <CheckCircle className="h-5 w-5 text-green-400" />
+              ) : (
+                <XCircle className="h-5 w-5 text-red-400" />
+              )}
+            </div>
+            <div className="ml-3">
+              <p className="text-sm font-medium">
+                {notification.message}
+              </p>
+            </div>
+            <div className="ml-auto pl-3">
+              <button
+                onClick={() => setNotification(prev => ({ ...prev, show: false }))}
+                className="inline-flex text-gray-400 hover:text-gray-600"
+              >
+                <XCircle className="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <div 
@@ -83,6 +162,7 @@ function Contact() {
                         </Label>
                         <Input
                           id="name"
+                          name="name"
                           type="text"
                           placeholder="Your full name"
                           required
@@ -95,6 +175,7 @@ function Contact() {
                         </Label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="your.email@example.com"
                           required
@@ -110,6 +191,7 @@ function Contact() {
                         </Label>
                         <Input
                           id="phone"
+                          name="phone"
                           type="tel"
                           placeholder="+91 9876654321"
                           className="mt-1 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -121,6 +203,7 @@ function Contact() {
                         </Label>
                         <select 
                           id="business-type"
+                          name="businessType"
                           className="mt-1 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
                         >
                           <option value="">Select your business type</option>
@@ -142,6 +225,7 @@ function Contact() {
                       </Label>
                       <Textarea
                         id="message"
+                        name="message"
                         placeholder="Tell us about your project, goals, and any specific requirements..."
                         rows={5}
                         required
@@ -151,10 +235,20 @@ function Contact() {
 
                     <Button 
                       type="submit" 
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                      disabled={isSubmitting}
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition-all duration-300"
                     >
-                      <Send className="w-4 h-4 mr-2" />
-                      Send Message
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-4 h-4 mr-2" />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </form>
 
@@ -170,14 +264,14 @@ function Contact() {
               <Card className="shadow-xl border-0 rounded-2xl overflow-hidden">
                 <div className="h-80">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.228624842691!2d77.15203101508237!3d28.69460398240248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d030866062d81%3A0x9f2d09f40c1b13e5!2sPacific%20Mall%20NSP%20Pitampura!5e0!3m2!1sen!2sin!4v1692360728000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.2947418861944!2d77.09583731508205!3d28.70184938239947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b85b4b6c5a7%3A0x4b8b4b8b4b8b4b8b!2sSector%205%2C%20Rohini%2C%20Delhi%2C%20110085!5e0!3m2!1sen!2sin!4v1692360728000!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Office Location"
+                    title="Office Location - Sector 5, Rohini, Delhi"
                   ></iframe>
                 </div>
               </Card>
@@ -199,8 +293,8 @@ function Contact() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        NSP Pacific Mall<br />
-                        Pitampura<br />
+                        Sector-5, Rohini<br />
+                        Delhi-110085<br />
                         Delhi, India
                       </p>
                     </div>
@@ -213,7 +307,7 @@ function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                      <p className="text-gray-600 text-sm">+91 9897654345</p>
+                      <p className="text-gray-600 text-sm">+91 9289916169</p>
                       <p className="text-gray-500 text-xs">Mon - Sat, 9AM - 6PM IST</p>
                     </div>
                   </div>
@@ -225,7 +319,7 @@ function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <p className="text-gray-600 text-sm">hello@stackcart.com</p>
+                      <p className="text-gray-600 text-sm">info@stackcart.in</p>
                       <p className="text-gray-500 text-xs">We reply within 24 hours</p>
                     </div>
                   </div>
@@ -235,25 +329,33 @@ function Contact() {
                     <h4 className="font-semibold text-gray-900 mb-4">Follow Us</h4>
                     <div className="flex space-x-4">
                       <a 
-                        href="#" 
+                        href="https://www.facebook.com/p/StackCart-61572672278830/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center justify-center text-white transition-colors duration-300"
                       >
                         <Facebook className="w-5 h-5" />
                       </a>
                       <a 
                         href="#" 
-                        className="w-10 h-10 bg-blue-400 hover:bg-blue-500 rounded-lg flex items-center justify-center text-white transition-colors duration-300"
+                        className="w-10 h-10 bg-slate-700 hover:bg-slate-800 rounded-lg flex items-center justify-center text-white transition-colors duration-300"
                       >
-                        <Twitter className="w-5 h-5" />
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
                       </a>
                       <a 
-                        href="#" 
+                        href="https://www.instagram.com/stackcart11/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className="w-10 h-10 bg-pink-500 hover:bg-pink-600 rounded-lg flex items-center justify-center text-white transition-colors duration-300"
                       >
                         <Instagram className="w-5 h-5" />
                       </a>
                       <a 
-                        href="#" 
+                        href="https://www.linkedin.com/company/stackcart-in/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className="w-10 h-10 bg-blue-700 hover:bg-blue-800 rounded-lg flex items-center justify-center text-white transition-colors duration-300"
                       >
                         <Linkedin className="w-5 h-5" />

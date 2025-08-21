@@ -208,10 +208,10 @@ const Portfolio = () => {
                     <p className="text-xs text-gray-700">{project.successStory}</p>
                   </div>
 
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-300">
+                  {/* <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-300">
                     <Eye className="w-4 h-4 mr-2" />
                     View Details
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             ))}
