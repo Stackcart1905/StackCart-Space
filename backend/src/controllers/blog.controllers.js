@@ -36,7 +36,7 @@ const createBlogPost = async (req, res) => {
     if (!title || !content || !author) {
       return res.status(400).json({ success: false, error: 'Title, content, and author are required.' });
     }
-
+   
     // Handle the image upload. The image file is in req.file, not req.body.
     if (!req.file) {
       return res.status(400).json({ success: false, error: 'A cover image is required.' });
