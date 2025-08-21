@@ -30,7 +30,7 @@ app.use(
       "http://localhost:3001", // Another local dev port if needed
       "https://stackcart-space.vercel.app", // Your deployed frontend
     ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // if you send cookies or auth headers
   })
