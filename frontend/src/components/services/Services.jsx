@@ -190,12 +190,12 @@ function Services() {
                       {service.description}
                     </p>
 
-                    <Button 
+                    {/* <Button 
                       className={`w-full bg-gradient-to-r ${colors.gradient} hover:shadow-lg transition-all duration-300 group text-sm`}
                     >
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               );

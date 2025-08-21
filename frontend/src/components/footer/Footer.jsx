@@ -180,19 +180,19 @@ function Footer() {
                 <div className="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center">
                   📧
                 </div>
-                <span className="text-sm">hello@codetocart.com</span>
+                <span className="text-sm">info@stackcart.in</span>
               </div>
               <div className="flex items-center gap-3 text-slate-400">
                 <div className="w-8 h-8 bg-green-600/20 rounded-lg flex items-center justify-center">
                   📞
                 </div>
-                <span className="text-sm">+91 9899999998</span>
+                <span className="text-sm">+91 9289916169</span>
               </div>
               <div className="flex items-center gap-3 text-slate-400">
                 <div className="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center">
                   📍
                 </div>
-                <span className="text-sm">New Delhi, IN</span>
+                <span className="text-sm">Sector-5 ,Rohini,Delhi-110085, IN</span>
               </div>
             </div>
             
@@ -206,7 +206,7 @@ function Footer() {
               </a>
               
               {/* Instagram */}
-              <a href="#" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/stackcart11/" target="_blank" rel="noopener noreferrer"
                  className="w-10 h-10 bg-gradient-to-br from-pink-600 to-purple-600 rounded-xl flex items-center justify-center hover:scale-110 hover:from-pink-500 hover:to-purple-500 transition-all duration-300 cursor-pointer group">
                 <svg className="w-5 h-5 text-white group-hover:text-pink-100" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.017 0C8.396 0 7.989.016 6.756.072 5.526.127 4.706.333 3.999.63c-.723.319-1.274.687-1.85 1.266C1.569 2.472 1.2 3.023.881 3.746c-.297.707-.503 1.527-.558 2.757C.266 7.736.25 8.143.25 11.764s.016 4.028.072 5.261c.055 1.23.261 2.05.558 2.757.319.723.687 1.274 1.266 1.85.576.576 1.127.944 1.85 1.263.707.297 1.527.503 2.757.558 1.233.056 1.64.072 5.261.072s4.028-.016 5.261-.072c1.23-.055 2.05-.261 2.757-.558.723-.319 1.274-.687 1.85-1.263.576-.576.944-1.127 1.263-1.85.297-.707.503-1.527.558-2.757.056-1.233.072-1.64.072-5.261s-.016-4.028-.072-5.261c-.055-1.23-.261-2.05-.558-2.757-.319-.723-.687-1.274-1.263-1.85C19.481.569 18.93.201 18.207-.118c-.707-.297-1.527-.503-2.757-.558C14.217.016 13.81 0 10.189 0h1.828zM12.017 2.162c3.556 0 3.976.016 5.382.072 1.298.059 2.003.274 2.473.456.622.242 1.065.532 1.53.997.465.465.755.908.997 1.53.182.47.397 1.175.456 2.473.056 1.406.072 1.826.072 5.382s-.016 3.976-.072 5.382c-.059 1.298-.274 2.003-.456 2.473-.242.622-.532 1.065-.997 1.53-.465.465-.908.755-1.53.997-.47.182-1.175.397-2.473.456-1.406.056-1.826.072-5.382.072s-3.976-.016-5.382-.072c-1.298-.059-2.003-.274-2.473-.456-.622-.242-1.065-.532-1.53-.997-.465-.465-.755-.908-.997-1.53-.182-.47-.397-1.175-.456-2.473C2.178 15.993 2.162 15.573 2.162 12.017s.016-3.976.072-5.382c.059-1.298.274-2.003.456-2.473.242-.622.532-1.065.997-1.53.465-.465.908-.755 1.53-.997.47-.182 1.175-.397 2.473-.456 1.406-.056 1.826-.072 5.382-.072zM12.017 5.838a6.179 6.179 0 1 0 0 12.358 6.179 6.179 0 0 0 0-12.358zm0 10.188a4.009 4.009 0 1 1 0-8.018 4.009 4.009 0 0 1 0 8.018zm7.846-10.405a1.441 1.441 0 1 1-2.883 0 1.441 1.441 0 0 1 2.883 0z"/>
@@ -214,7 +214,7 @@ function Footer() {
               </a>
               
               {/* LinkedIn */}
-              <a href="https://linkedin.com/company/codetocart" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/company/stackcart-in/" target="_blank" rel="noopener noreferrer"
                  className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center hover:scale-110 hover:from-blue-500 hover:to-blue-600 transition-all duration-300 cursor-pointer group">
                 <svg className="w-5 h-5 text-white group-hover:text-blue-100" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -222,7 +222,7 @@ function Footer() {
               </a>
               
               {/* Facebook */}
-              <a href="https://facebook.com/codetocart" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.facebook.com/p/StackCart-61572672278830/" target="_blank" rel="noopener noreferrer"
                  className="w-10 h-10 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl flex items-center justify-center hover:scale-110 hover:from-blue-700 hover:to-blue-800 transition-all duration-300 cursor-pointer group">
                 <svg className="w-5 h-5 text-white group-hover:text-blue-100" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>

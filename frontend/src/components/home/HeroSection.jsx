@@ -33,13 +33,13 @@ function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" className="bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            {/* <Button size="lg" className="bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               🚀 Get Started Now
-            </Button>
+            </Button> */}
             
-            <Button variant="outline" size="lg" className="text-blue-900 border-blue-900 hover:bg-blue-50 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            {/* <Button variant="outline" size="lg" className="text-blue-900 border-blue-900 hover:bg-blue-50 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               📅 Book Free Demo
-            </Button>
+            </Button> */}
           </div>
 
           

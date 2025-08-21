@@ -22,8 +22,8 @@ function PricingPlans() {
       subtitle: 'Perfect for small businesses',
       description: 'Basic site + listing',
       icon: Globe,
-      price: 499,
-      originalPrice: 699,
+      price: 4999,
+      originalPrice: 6999,
       popular: false,
       color: 'blue',
       features: [
@@ -47,8 +47,8 @@ function PricingPlans() {
       subtitle: 'Most popular choice',
       description: 'Site + marketing',
       icon: TrendingUp,
-      price: 899,
-      originalPrice: 1199,
+      price: 8999,
+      originalPrice: 11999,
       popular: true,
       color: 'emerald',
       features: [
@@ -73,8 +73,8 @@ function PricingPlans() {
       subtitle: 'Complete business solution',
       description: 'Everything + analytics',
       icon: Crown,
-      price: 1299,
-      originalPrice: 1799,
+      price: 12999,
+      originalPrice: 17999,
       popular: false,
       color: 'purple',
       features: [
@@ -204,18 +204,18 @@ function PricingPlans() {
                     <div className="text-center mb-8 p-6 bg-gray-50 rounded-2xl">
                       <div className="flex items-center justify-center gap-2 mb-2">
                         <span className="text-4xl font-bold text-gray-900">
-                          ${plan.price}
+                          ₹{plan.price}
                         </span>
                         {plan.originalPrice && (
                           <span className="text-lg text-gray-500 line-through">
-                            ${plan.originalPrice}
+                            ₹{plan.originalPrice}
                           </span>
                         )}
                       </div>
                       <p className="text-gray-600 text-sm">One-time payment</p>
                       {plan.originalPrice && (
                         <Badge className="mt-2 bg-green-100 text-green-700">
-                          Save ${plan.originalPrice - plan.price}
+                          Save ₹{plan.originalPrice - plan.price}
                         </Badge>
                       )}
                     </div>
@@ -276,10 +276,10 @@ function PricingPlans() {
               <p className="text-gray-600 mb-6">
                 Have specific requirements? Let's discuss a custom solution tailored to your business needs.
               </p>
-              <Button variant="outline" className="px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold rounded-xl transition-all duration-300">
+              {/* <Button variant="outline" className="px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold rounded-xl transition-all duration-300">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Contact us for custom quotes
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
