@@ -22,7 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // cors origin allow from everywhere
-import cors from "cors";
 
 app.use(
   cors({
