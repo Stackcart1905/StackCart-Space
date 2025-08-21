@@ -205,11 +205,15 @@ function Testimonials() {
 
           {/* Call to Action */}
           {/* <div className="mt-12 text-center">
+
             <p className="text-slate-600 mb-4">Ready to join our success stories?</p>
             <button className="bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
               Start Your Project
             </button>
+
           </div> */}
+
+
         </div>
 
         {/* Stats Section */}
