@@ -8,7 +8,7 @@ Whether you're a startup, SME, or established enterprise, StackCart-Space provid
 
 ## 🚩 Key Highlights  
 
-○ **End-to-End Solution:** From custom website/app development to digital marketing and analytics, we handle every aspect of your online presence.  
+○ **End-to-End Solution:** From custom website/app development to digital marketing and analytics, we handle every aspect of your online presence .  
 ○ **Modern Tech Stack:** Built using React (Vite), Node.js, Express, Tailwind CSS, and MongoDB for performance, scalability, and developer friendliness.  
 ○ **Growth-Oriented:** Integrated marketing, analytics, and conversion tools to turn visitors into loyal customers.  
 
