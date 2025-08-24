@@ -1,16 +1,28 @@
+import { useState } from "react"
 import { Button } from "../ui/button"
 
 // Navigation component - Professional shadcn/ui design
 function Navigation() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+  }
+
   return (
-    <nav className="flex justify-between items-center px-6 lg:px-12 py-4 bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-slate-200">
+    <>
+      <nav className="flex justify-between items-center px-4 sm:px-6 lg:px-12 py-3 sm:py-4 bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-slate-200">
       {/* Logo section */}
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-2 sm:space-x-3">
         <div className="relative">
 
           {/* Refined Logo SVG - Professional Navy & Emerald */}
 
-          <svg width="40" height="40" viewBox="0 0 40 40" className="relative z-10">
+          <svg width="32" height="32" viewBox="0 0 40 40" className="relative z-10 sm:w-10 sm:h-10">
 
             {/* Gradient definitions */}
             <defs>
@@ -90,7 +102,7 @@ function Navigation() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/5 to-emerald-500/5 rounded-lg"></div>
         </div>
         <div className="flex flex-col">
-          <span className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-emerald-600 bg-clip-text text-transparent">
+          <span className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-900 to-emerald-600 bg-clip-text text-transparent">
             Code to Cart
           </span>
           <span className="hidden sm:block text-xs text-slate-500 font-medium tracking-wider">
@@ -99,8 +111,8 @@ function Navigation() {
         </div>
       </div>
       
-      {/* Menu items */}
-      <div className="hidden md:flex gap-8 items-center">
+      {/* Menu items - Show on larger screens */}
+      <div className="hidden lg:flex gap-6 xl:gap-8 items-center">
         <a href="#home" className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 hover:scale-105">
           Home
         </a>
@@ -126,15 +138,90 @@ function Navigation() {
         </Button> */}
       </div>
 
-      {/* Mobile menu button */}
-      <div className="md:hidden">
-        <Button variant="ghost" className="p-2">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+      {/* Mobile menu button - Show on mobile and tablet */}
+      <div className="lg:hidden">
+        <Button variant="ghost" className="p-1.5 sm:p-2" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? (
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
         </Button>
       </div>
     </nav>
+
+    {/* Mobile menu overlay - covers entire screen */}
+    {isMobileMenuOpen && (
+      <div 
+        className="fixed inset-0 bg-white/20 backdrop-blur-sm z-40 lg:hidden"
+        onClick={closeMobileMenu}
+      ></div>
+    )}
+
+    {/* Mobile menu items */}
+    {isMobileMenuOpen && (
+      <div className="fixed top-[64px] sm:top-[72px] left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg z-50 lg:hidden">
+        <div className="flex flex-col py-4 px-4 sm:px-6 space-y-3 sm:space-y-4">
+          <a 
+            href="#home" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2 border-b border-slate-100"
+            onClick={closeMobileMenu}
+          >
+            Home
+          </a>
+          <a 
+            href="#about" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2 border-b border-slate-100"
+            onClick={closeMobileMenu}
+          >
+            About
+          </a>
+          <a 
+            href="#services" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2 border-b border-slate-100"
+            onClick={closeMobileMenu}
+          >
+            Services
+          </a>
+          <a 
+            href="#portfolio" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2 border-b border-slate-100"
+            onClick={closeMobileMenu}
+          >
+            Portfolio
+          </a>
+          <a 
+            href="#pricing" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2 border-b border-slate-100"
+            onClick={closeMobileMenu}
+          >
+            Pricing
+          </a>
+          <a 
+            href="#contact" 
+            className="text-slate-700 hover:text-blue-900 font-medium transition-all duration-200 py-2"
+            onClick={closeMobileMenu}
+          >
+            Contact
+          </a>
+          
+          {/* Mobile CTA Button */}
+          {/* <div className="pt-3 sm:pt-4">
+            <Button 
+              className="w-full bg-gradient-to-r from-blue-900 to-emerald-600 hover:from-blue-800 hover:to-emerald-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={closeMobileMenu}
+            >
+              Get Started
+            </Button>
+          </div> */}
+        </div>
+      </div>
+    )}
+  </>
   )
 }
 
