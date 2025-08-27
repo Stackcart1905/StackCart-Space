@@ -10,9 +10,9 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc",
-      company: "TechStart Inc",
+      name: "Rajesh Kumar",
+      role: "CEO, TechnoVision Solutions",
+      company: "TechnoVision Solutions",
       image: "/api/placeholder/60/60",
       rating: 5,
       text: "StackCart transformed our e-commerce vision into reality. Their attention to detail and professional approach exceeded our expectations. The custom solution they built has increased our sales by 150%.",
@@ -20,9 +20,9 @@ function Testimonials() {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Founder, Digital Solutions",
-      company: "Digital Solutions",
+      name: "Priya Sharma",
+      role: "Founder, Digital Bharat",
+      company: "Digital Bharat",
       image: "/api/placeholder/60/60",
       rating: 5,
       text: "Working with StackCart was a game-changer for our business. They delivered a robust, scalable platform that handles our growing customer base effortlessly. Highly recommended!",
@@ -30,9 +30,9 @@ function Testimonials() {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Marketing Director, Fashion Hub",
-      company: "Fashion Hub",
+      name: "Arjun Patel",
+      role: "Marketing Director, Fashion Bazaar",
+      company: "Fashion Bazaar",
       image: "/api/placeholder/60/60",
       rating: 5,
       text: "The team at StackCart understood our unique requirements and delivered beyond expectations. The user experience is seamless, and our customers love the new platform.",
@@ -40,9 +40,9 @@ function Testimonials() {
     },
     {
       id: 4,
-      name: "David Thompson",
-      role: "COO, GreenTech Solutions",
-      company: "GreenTech Solutions",
+      name: "Kavya Reddy",
+      role: "COO, GreenTech India",
+      company: "GreenTech India",
       image: "/api/placeholder/60/60",
       rating: 5,
       text: "Professional, reliable, and innovative. StackCart helped us launch our marketplace faster than we thought possible. The ongoing support has been exceptional.",
@@ -52,12 +52,12 @@ function Testimonials() {
 
   // Sample brand logos - replace with actual client logos
   const brands = [
-    { name: "TechStart", logo: "/api/placeholder/120/60" },
-    { name: "Digital Solutions", logo: "/api/placeholder/120/60" },
-    { name: "Fashion Hub", logo: "/api/placeholder/120/60" },
-    { name: "GreenTech", logo: "/api/placeholder/120/60" },
-    { name: "InnovateCorp", logo: "/api/placeholder/120/60" },
-    { name: "NextGen", logo: "/api/placeholder/120/60" }
+    { name: "TechnoVision", logo: "/api/placeholder/120/60" },
+    { name: "Digital Bharat", logo: "/api/placeholder/120/60" },
+    { name: "Fashion Bazaar", logo: "/api/placeholder/120/60" },
+    { name: "GreenTech India", logo: "/api/placeholder/120/60" },
+    { name: "InnovateIndia", logo: "/api/placeholder/120/60" },
+    { name: "NextGen Solutions", logo: "/api/placeholder/120/60" }
   ]
 
   // Auto-slide functionality
