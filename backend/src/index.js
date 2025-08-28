@@ -29,6 +29,7 @@ app.use(
       "http://localhost:5173", // Local frontend (Vite/React)
       "http://localhost:3001", // Another local dev port if needed
       "https://stackcart-space.vercel.app", // Your deployed frontend
+      "https://www.stackcart.space",
     ],
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
