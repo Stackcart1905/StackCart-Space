@@ -5,6 +5,13 @@ import Services from './components/services/Services'
 import PricingPlans from './components/pricing/PricingPlans'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
+import { 
+  TermsConditions, 
+  PrivacyPolicy, 
+  ShippingDeliveryPolicy, 
+  ContactUs, 
+  CancellationRefundPolicy 
+} from './components/policies'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -34,6 +41,16 @@ function App() {
         return <PricingPlans />
       case 'contact':
         return <Contact />
+      case 'terms':
+        return <TermsConditions />
+      case 'privacy':
+        return <PrivacyPolicy />
+      case 'shipping':
+        return <ShippingDeliveryPolicy />
+      case 'contact-us':
+        return <ContactUs />
+      case 'refund':
+        return <CancellationRefundPolicy />
       case 'home':
       default:
         return <HomePage />

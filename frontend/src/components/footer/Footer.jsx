@@ -14,7 +14,7 @@ function Footer() {
       {/* Main footer content */}
       <div className="relative">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto mb-5">
 
           {/* Company info */}
           <div className="lg:col-span-1">
@@ -145,6 +145,30 @@ function Footer() {
             </div>
           </div>
           
+          {/* Company Policies */}
+          <div>
+            <h4 className="text-lg font-bold mb-6 text-white">
+              Company Policies
+            </h4>
+            <div className="flex flex-col gap-3">
+              <a href="#privacy" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
+                → Privacy Policy
+              </a>
+              <a href="#terms" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
+                → Terms & Conditions
+              </a>
+              <a href="#shipping" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
+                → Shipping Policy
+              </a>
+              <a href="#refund" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
+                → Refund Policy
+              </a>
+              <a href="#contact-us" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
+                → Contact Us
+              </a>
+            </div>
+          </div>
+          
           {/* Services */}
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">
@@ -180,7 +204,7 @@ function Footer() {
                 <div className="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center">
                   📧
                 </div>
-                <span className="text-sm">info@stackcart.in</span>
+                <span className="text-sm">support@stackcart.in</span>
               </div>
               <div className="flex items-center gap-3 text-slate-400">
                 <div className="w-8 h-8 bg-green-600/20 rounded-lg flex items-center justify-center">
@@ -198,7 +222,7 @@ function Footer() {
             
             <div className="flex gap-3">
               {/* Twitter (X) */}
-              <a href="https://twitter.com/codetocart" target="_blank" rel="noopener noreferrer" 
+              <a href="https://x.com/StackCart11" target="_blank" rel="noopener noreferrer" 
                  className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl flex items-center justify-center hover:scale-110 hover:from-slate-600 hover:to-slate-700 transition-all duration-300 cursor-pointer group">
                 <svg className="w-5 h-5 text-white group-hover:text-slate-200" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -236,19 +260,12 @@ function Footer() {
         
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-4">
-            <p className="text-slate-400 text-center md:text-left">
-              © 2025 Code to Cart. All rights reserved.
-            </p>
-          </div>
-          <div className="flex gap-6">
-            <a href="#privacy" className="text-slate-400 hover:text-white transition-colors text-sm">
-              Privacy Policy
-            </a>
-            <a href="#terms" className="text-slate-400 hover:text-white transition-colors text-sm">
-              Terms & Conditions
-            </a>
-          </div>
+          <p className="text-slate-400 text-center md:text-left">
+            © 2025 Code to Cart. All rights reserved.
+          </p>
+          <p className="text-slate-400 text-sm text-center md:text-right">
+            Made with <span className="text-red-500 animate-pulse">❤️</span> in India
+          </p>
         </div>
       </div>
     </footer>
