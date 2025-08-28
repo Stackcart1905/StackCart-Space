@@ -17,7 +17,7 @@ function Navigation() {
     <>
       <nav className="flex justify-between items-center px-4 sm:px-6 lg:px-12 py-3 sm:py-4 bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-slate-200">
       {/* Logo section */}
-      <div className="flex items-center space-x-2 sm:space-x-3">
+      <a href="#home" className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-80 transition-opacity duration-200">
         <div className="relative">
 
           {/* Refined Logo SVG - Professional Navy & Emerald */}
@@ -109,7 +109,7 @@ function Navigation() {
             BUILD • MARKET • SELL
           </span>
         </div>
-      </div>
+      </a>
       
       {/* Menu items - Show on larger screens */}
       <div className="hidden lg:flex gap-6 xl:gap-8 items-center">
