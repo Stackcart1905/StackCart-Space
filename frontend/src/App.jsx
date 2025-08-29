@@ -8,7 +8,6 @@ import Contact from './components/contact/Contact'
 import { 
   TermsConditions, 
   PrivacyPolicy, 
-  ShippingDeliveryPolicy, 
   ContactUs, 
   CancellationRefundPolicy 
 } from './components/policies'

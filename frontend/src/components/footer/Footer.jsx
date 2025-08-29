@@ -157,9 +157,7 @@ function Footer() {
               <a href="#terms" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
                 → Terms & Conditions
               </a>
-              <a href="#shipping" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
-                → Shipping Policy
-              </a>
+              
               <a href="#refund" className="text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-200">
                 → Refund Policy
               </a>
