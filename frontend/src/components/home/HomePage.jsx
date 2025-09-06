@@ -6,7 +6,7 @@ import WhyChooseUs from './WhyChooseUs'
 import Footer from '../footer/Footer'
 import HowItWorks from './HowItWorks'
 import Testimonials from './Testimonials'
-
+import OurWork from "./OurWork"; 
 function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -20,6 +20,7 @@ function HomePage() {
         <HowItWorks />
         <WhyChooseUs />
         <Testimonials />
+          <OurWork />
       </main>
       
       
