@@ -9,9 +9,9 @@ import platformLogo from "../../assets/icons/platform.png";
 function OurWork() {
   const projects = [
     {
-      title: "StackCart Space (Code to Cart)",
-      desc: "A modern eCommerce solution helping businesses build, market & sell online.",
-      link: "https://www.stackcart.space/",
+      title: "Satkar Restaurant",
+      desc: "A modern e-commerce platform for a restaurant, enabling online orders and deliveries.",
+      link: "https://satkar-restaurant.vercel.app/",
       logo: cartLogo,
     },
     {
@@ -33,7 +33,8 @@ function OurWork() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
         <p className="text-gray-600 mb-10">
-          Here’s a glimpse of the impactful projects we’ve delivered for our clients.
+          Here’s a glimpse of the impactful projects we’ve delivered for our
+          clients.
         </p>
 
         {/* Project Cards */}
