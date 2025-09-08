@@ -75,10 +75,16 @@ function About() {
               <div className="w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Crown className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">Anshu Raj</h3>
-              <p className="text-orange-600 font-semibold mb-3">Founder & CEO</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Anshu Raj
+              </h3>
+              <p className="text-orange-600 font-semibold mb-3">
+                Founder & CEO
+              </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Leading StackCart with vision and innovation, driving the company's strategic growth and empowering businesses to thrive online.
+                Leading StackCart with vision and innovation, driving the
+                company's strategic growth and empowering businesses to thrive
+                online.
               </p>
             </div>
 
@@ -87,10 +93,13 @@ function About() {
               <div className="w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Code className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">Rohit Anand</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Rohit Sharma
+              </h3>
               <p className="text-blue-600 font-semibold mb-3">Technical Lead</p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Architecting robust solutions and leading our development team to deliver cutting-edge e-commerce platforms with excellence.
+                Architecting robust solutions and leading our development team
+                to deliver cutting-edge e-commerce platforms with excellence.
               </p>
             </div>
 
@@ -99,10 +108,15 @@ function About() {
               <div className="w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Monitor className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">Milind Singh</h3>
-              <p className="text-emerald-600 font-semibold mb-3">Frontend Developer</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Milind Singh
+              </h3>
+              <p className="text-emerald-600 font-semibold mb-3">
+                Frontend Developer
+              </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Creating beautiful, responsive user interfaces that deliver exceptional user experiences across all devices and platforms.
+                Creating beautiful, responsive user interfaces that deliver
+                exceptional user experiences across all devices and platforms.
               </p>
             </div>
 
@@ -111,10 +125,15 @@ function About() {
               <div className="w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Palette className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">Ritika Kumtia</h3>
-              <p className="text-pink-600 font-semibold mb-3">Frontend Developer</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Ritika Kumtia
+              </h3>
+              <p className="text-pink-600 font-semibold mb-3">
+                Frontend Developer
+              </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Crafting intuitive and engaging frontend solutions with attention to detail and modern design principles.
+                Crafting intuitive and engaging frontend solutions with
+                attention to detail and modern design principles.
               </p>
             </div>
 
@@ -123,10 +142,15 @@ function About() {
               <div className="w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Server className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">Prince Singh</h3>
-              <p className="text-purple-600 font-semibold mb-3">Backend Developer</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Prince Singh
+              </h3>
+              <p className="text-purple-600 font-semibold mb-3">
+                Backend Developer
+              </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Building scalable backend systems and APIs that power our e-commerce solutions with security and performance in mind.
+                Building scalable backend systems and APIs that power our
+                e-commerce solutions with security and performance in mind.
               </p>
             </div>
           </div>
